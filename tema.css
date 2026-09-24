@@ -1,0 +1,36 @@
+:root {
+  --color-bg: var(--black);
+  --color-fg: var(--white);
+  --color-surface: var(--black-soft);
+  --color-border: var(--green-dark);
+  --color-primary: var(--green);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: var(--black);
+    --color-fg: var(--white);
+    --color-surface: var(--black-soft);
+    --color-border: var(--green-dark);
+    --color-primary: var(--green);
+  }
+}
+
+:root:has(#tema:checked) {
+  --color-bg: var(--black);
+  --color-fg: var(--white);
+  --color-surface: var(--black-soft);
+  --color-border: var(--green-dark);
+  --color-primary: var(--green);
+}
+
+.kontrol-tema {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.tombol-tema {
+  color: var(--color-primary);
+  cursor: pointer;
+}
